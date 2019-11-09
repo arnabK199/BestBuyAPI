@@ -14,7 +14,7 @@ public class GetStores {
 	
 	@Test
 	public void getAllStores() {
-		
+		//this is a git Push test
 		RestAssured.baseURI ="http://localhost:3030";
 		
 		Response r =given().param("$limit", "5").when().get("/stores").then().assertThat().statusCode(200).and().contentType(ContentType.JSON).and().extract().response();
